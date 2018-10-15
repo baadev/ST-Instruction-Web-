@@ -1,0 +1,138 @@
+.z1 {
+    color: #484355;
+}
+.z2 {
+    color: #927F68;
+}
+.z3 {
+    color: #FDBF0F;
+}
+.z4 {
+    color: #FEDC73;
+}
+
+.function_description::before, .function_syntax::before, .function_parameters::before, .function_returns::before, .function_example::before, .function_sideeffect::before, .function_description_note::before, .function_tip::before, .function_programming_tips::before, .function_example_code::before, .function_warning::before, .function_coding_tip::before, .function_see_also::before, .function_hardware_required::before, .function_circuit::before, .function_usage::before, .example_description::before, .example_author::before, .example_code::before, .example_hardware_required::before, .example_coding_tip::before, .example_see_also::before, .example_schematics::before, .example_photos::before, .example_screenshots::before {  
+    content: "Description";
+    color: #927F68;
+    font-weight: bold;
+    display: block;
+    margin-top: 1em;
+}
+
+.function_description, .function_description_more, .function_syntax, .function_parameters, .function_returns, .function_example, .function_sideeffect, .function_description_note, .function_tip, .function_programming_tips, .function_example_code,.function_warning, .function_coding_tip, .function_see_also, .example_description, .example_author, .example_code, .example_hardware_required, .example_coding_tip, .example_see_also, .example_schematics, .example_photos, .example_screenshots {
+    display: block;
+    margin-top: 0.5em;
+}
+
+.function_description_note::before {
+    content: "!";
+    display: inline-block;
+    font-weight: bold;
+    font-size: 150%;
+    border: 1px solid black;
+    width: 1em;
+    text-align: center;
+}
+
+.function_description::before {
+    content: "Description";
+}
+
+.function_syntax::before { 
+    content: "Syntax";
+}
+
+.function_parameters::before {
+    content: "Parameters";
+}
+
+.function_returns::before {
+    content: "Returns";
+}
+
+.function_example::before {
+    content: "Example";
+}
+
+.function_usage::before {
+    content:"Usage";
+}
+.function_sideeffect::before {
+    content: "Side Effects";
+}
+
+.function_tip::before {
+    content: "Tip";
+}
+.function_programming_tips::before {
+    content: "Programmig Tips";
+}
+.function_warning::before {
+    content: "Warning";
+}
+.function_coding_tip::before { 
+    content: "Coding Tip";
+}
+.function_see_also::before { 
+    content: "See also";
+}
+
+
+.example_description::before { 
+    content: "Description";
+}
+.example_author::before { 
+    content: "Author";
+}
+.example_code::before { 
+    content: "Example Code";
+}
+.example_hardware_required::before{
+    content: "Hardware Required";
+}
+.example_coding_tip::before { 
+    content: "Coding Tip";
+}
+.example_see_also::before { 
+    content: "See also";
+}
+.example_schematics::before{
+    content: "Schematics";
+}
+.example_photos::before{
+    content: "Photos";
+}
+.example_screenshots::before{
+    content: "Screenshots";
+}
+
+
+.function_parameters_param {
+    display: table;
+}
+
+.function_parameters_param {
+    display: table-row;
+}
+
+.function_parameters_param_name, .function_parameters_param_description {
+    display: table-cell;
+}
+
+.function_parameters_param_description {
+    padding-left: 2em;
+}
+
+
+.reference_index td {
+    border-width: 0;
+}
+
+.reference_index td+td {
+    border-left: 1px solid gray;
+}
+
+.reference_index td {
+    width: 25%;
+    vertical-align: top;
+}

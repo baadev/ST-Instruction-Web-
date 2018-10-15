@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- saved from url=(0207)http://localhost:8000/Desktop/Shield-Configurator-ZME-%2Dmaster/Z-Uno_Shield_Configurator.html?pin3=NC&pin4=NC&pin5=NC&pin6=NC&pin13=NC&pin14=NC&pin15=NC&pin16=NC&pin3pwm=NC&pin7=NC&pin8=NC&pin11=NC&pin12=NC -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Z-Uno SmartThings Instruction</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+
+    <link rel="shortcut icon" href="https://z-uno.z-wave.me/favicon.ico">
+    <!-- rss -->
+    <link rel="alternate" type="application/rss+xml" title="Z-Wave.Me" href="https://z-uno.z-wave.me/news/rss/">           
+    <!-- css -->
+    <link href="./Z-Uno Shield Configurator_files/default.css" rel="stylesheet" type="text/css">
+    <link href="./Z-Uno Shield Configurator_files/waslidemenu.css" rel="stylesheet" type="text/css">
+
+
+    <!-- js -->
+    <script type="text/javascript" async="" src="./Z-Uno Shield Configurator_files/ga.js.Без названия"></script><script type="text/javascript" async="" src="./Z-Uno Shield Configurator_files/ga.js(1).Без названия"></script><script type="text/javascript" src="./Z-Uno Shield Configurator_files/jquery-1.11.1.min.js.Без названия"></script>
+
+    <script type="text/javascript" src="./Z-Uno Shield Configurator_files/jquery-migrate-1.2.1.min.js.Без названия"></script>
+    <script type="text/javascript" src="./Z-Uno Shield Configurator_files/default.js.Без названия"></script>
+    <script type="text/javascript" src="./Z-Uno Shield Configurator_files/jquery.waslidemenu.min.js.Без названия"></script>
+
+
+
+    <!-- Reference CSS/JS -->
+    <link href="./Z-Uno Shield Configurator_files/reference.css" rel="stylesheet" type="text/css">
+    <script src="./Z-Uno Shield Configurator_files/reference.js.Без названия"></script>
+    <link rel="stylesheet" href="./Z-Uno Shield Configurator_files/default.min.css">
+    <script src="./Z-Uno Shield Configurator_files/highlight.min.js.Без названия"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- put your Site app-only custom <head> tag instructions here -->
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-63270113-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+      </script> 
+
+<!--[if lt IE 9]>
+<script>
+document.createElement('header');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');
+document.createElement('figure');
+document.createElement('hgroup');
+document.createElement('menu');
+</script>
+<![endif]-->
+
+</head>
+<body class="color_scheme_green">
+
+    <header class="globalheader">
+
+        <!-- EXTENDED HEADER with in-app navigation -->
+        <div class="container extendednav" id="header-container" style="padding-top: 38px;">
+            <h2>
+                <a href="https://z-uno.z-wave.me/">
+                    <img src="./Z-Uno Shield Configurator_files/zuno_logo_fin_200.png" height="100" alt="Z-Uno" id="logo" style="margin-top: -38px;">
+                </a>
+            </h2>
+
+            <!-- Site app page list -->
+            <ul class="pages">
+
+
+                <li><a href="https://z-uno.z-wave.me/technical">Z-Uno</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/shield">Shield</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/module">Module</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/buy">Where to buy</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/getting-started">Getting Started</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/reference">Reference</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/z-wave">Z-Wave</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/examples">Examples</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/forum">Forum</a></li>
+
+                <li><a href="https://z-uno.z-wave.me/news">News</a></li>
+
+            </ul>
+
+
+            <div class="clear-both"></div> 
+        </div>
+    </header>
+
+    <!-- APP CONTENT -->
+    <main class="maincontent" role="main">
+        <div class="container">
+            <div class="page">
+                <article class="page-content" itemscope="" itemtype="http://schema.org/WebPage">
+
+                    <script language="JavaScript" src="./res/motionpack.js"></script>
+                    
+                    <style type="text/css">
+                        .jslink {
+                            margin-left: 1em;
+                            cursor: pointer;
+                            color: blue;
+                            text-decoration: underline;
+                            text-decoration-style: dotted;
+                        }
+                        .clear {
+                            clear: both;
+                            margin-top: 1em;
+                        }
+                        .ST_p {
+                            margin-bottom: 0px;
+                        }
+                        .steps img {
+                            width: 65%;
+                        }
+                        .steps li {
+                            margin-bottom: 2ex;
+                        }
+                        .step {
+                            display: none;
+                            margin-top: 1em;
+                        }
+                    </style>
+
+                    <div id="page" role="main" itemprop="description">
+                        <h1>SmartThings installation guide</h1>
+                        <p>There's a SmartThings Device Handler installation guide</p>
+                        <ol class="steps">
+                            <li>
+                                <p class="ST_p">
+                                    First you need login to your SmartThings IDE at <a href="https://graph.api.smartthings.com" target="_blank">graph.api.smartthings.com</a> (<a href="https://account.samsung.com/account/signUp.do" target="_blank">create a login</a> if you don't have one).
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('first_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="first_step" class="step">
+                                    <p style="margin-bottom: 0;">You may see this form if you recently complete registration and this is your first login</p>
+                                    <img class="img_300" src="./res/1.1.png" style="width: 35%;">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Click on tab "My Device Handlers"
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('second_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="second_step" class="step">
+                                    <img src="./res/2.1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Click on "+ Create New Device Handler" on the top right
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('third_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="third_step" class="step">
+                                    <img src="./res/3.1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Click on "From code"
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('fourth_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="fourth_step" class="step">
+                                    <img src="./res/4.1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Go to our repository at <a href="https://github.com/Z-Wave-Me/SmartThingsPublic/tree/master/devicetypes/z-wave-me"  target="_blank">github.com</a> and copy code one of Device Handlers
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('fiveth_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="fiveth_step" class="step">
+                                    <img src="./res/5.1.png">
+                                    <img src="./res/5.2.png">
+                                    <img src="./res/5.3.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Paste code (Ctrl + V) to text area and click "Create"
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('sixth_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="sixth_step" class="step">
+                                    <img src="./res/6.1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Click "Publish" on the top right and after that click "For Me"
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('seventh_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="seventh_step" class="step">
+                                    <img src="./res/7.1.png">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Repeat steps 5 - 7 for each of Device Handler from repository
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    Finnaly you should see all of them in Device Handlers list with Status "Published" 
+                                    <a id="jslink_screenshot" class="jslink" href="javascript:;" onmousedown="slideAction('eigth_step', this);">Open screenshots</a>
+                                </p>
+                                <div id="eigth_step" class="step">
+                                    <img src="./res/9.1.png" style="width: 100%;">
+                                </div>
+                            </li>
+
+                            <li>
+                                <p class="ST_p">
+                                    You're done!
+                                </p>                                
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="clear-both"></div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+<footer class="globalfooter" role="contentinfo">
+    <div class="container">
+        <div class="footer-block" id="copyright">
+            © 2018
+            <a href="https://z-uno.z-wave.me/">Z-Wave.Me</a>
+        </div>
+        
+        <!-- 
+                    <div class="footer-block">
+                <a href="/photos/" class="top">Photos</a>
+                <a href="/photos/favorites/">Favorites</a>
+            </div>
+        -->
+
+        <div class="footer-block">
+            <a href="https://z-uno.z-wave.me/news/" class="top">News</a>
+            <a href="https://z-uno.z-wave.me/news/subscribe">Subscribe</a>
+        </div>
+        
+        <div class="footer-block">
+            <a href="https://z-uno.z-wave.me/contact" class="top">Contact us</a>
+            
+            <a href="tel:+74956813836">+7 (495) 681-38-36</a>
+            <a href="mailto:z-uno@z-wave.me">z-uno@z-wave.me</a>
+        </div>
+        
+        <div class="footer-block">
+            <a href="https://z-uno.z-wave.me/sitemap" class="top">Site content</a>
+        </div>
+        
+        
+        
+        <div class="clear-both"></div>
+    </div>
+    <div class="followus">
+        <div class="container">
+
+
+            <div class="social">
+                <a href="https://z-uno.z-wave.me/news/rss/" title="RSS"><i class="icon24 rss"></i></a>                                        <a href="https://twitter.com/zuno_zwave" title="Twitter"><i class="icon24 twitter"></i></a>                                                                                                                    </div>
+
+            </div>
+        </div>
+        <div class="poweredby" role="complementary">
+            We are using <a href="http://www.webasyst.com/">Webasyst</a> <span class="dots" title="Webasyst"></span>
+            <!-- add specific subheader content for Site app here -->
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" charset="utf-8" src="./Z-Uno Shield Configurator_files/popup.js.Без названия"></script><script type="text/javascript" charset="utf-8" src="./Z-Uno Shield Configurator_files/popup.js(1).Без названия"></script><script type="text/javascript" src="./Z-Uno Shield Configurator_files/embed.js.Без названия" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us2.list-manage.com","uuid":"65cf062504578d2e2e81f8aeb","lid":"b23f406711"}) })</script>
+
+
+    <div id="PopupSignupForm_0" widgetid="PopupSignupForm_0">
+        <!-- MC BANNER -->
+        <div class="mc-banner" data-dojo-attach-point="bannerContainer" style="display: none;">
+            <div class="mc-layout__bannerContent">
+                <iframe src="./Z-Uno Shield Configurator_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="width:100%;" data-dojo-attach-point="iframeBannerContainer"></iframe>
+            </div>
+        </div>
+
+        <!-- MC MODAL -->
+        <div class="mc-modal" data-dojo-attach-point="modalContainer" style="display: none;">
+            <div class="mc-closeModal" data-action="close-mc-modal" data-dojo-attach-point="modalClose"></div>
+            <div class="mc-layout__modalContent">
+                <iframe src="./Z-Uno Shield Configurator_files/saved_resource(1).html" frameborder="0" marginwidth="0" marginheight="0" style="width:100%;" data-dojo-attach-point="iframeModalContainer"></iframe>
+            </div>
+        </div>
+
+        <!-- MC MODAL OVERLAY -->
+        <div class="mc-modal-bg" data-dojo-attach-point="modalOverlay" style="display: none;"></div>
+    </div><div id="PopupSignupForm_0" widgetid="PopupSignupForm_0">
+        <!-- MC BANNER -->
+        <div class="mc-banner" data-dojo-attach-point="bannerContainer" style="display: none;">
+            <div class="mc-layout__bannerContent">
+                <iframe src="./Z-Uno Shield Configurator_files/saved_resource(2).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="width:100%;" data-dojo-attach-point="iframeBannerContainer"></iframe>
+            </div>
+        </div>
+
+        <!-- MC MODAL -->
+        <div class="mc-modal" data-dojo-attach-point="modalContainer" style="display: none;">
+            <div class="mc-closeModal" data-action="close-mc-modal" data-dojo-attach-point="modalClose"></div>
+            <div class="mc-layout__modalContent">
+                <iframe src="./Z-Uno Shield Configurator_files/saved_resource(3).html" frameborder="0" marginwidth="0" marginheight="0" style="width:100%;" data-dojo-attach-point="iframeModalContainer"></iframe>
+            </div>
+        </div>
+
+        <!-- MC MODAL OVERLAY -->
+        <div class="mc-modal-bg" data-dojo-attach-point="modalOverlay" style="display: none;"></div>
+    </div></body></html>
